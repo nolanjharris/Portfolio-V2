@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css?family=Mina:400,700');
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Mina', cursive;
+}
+
+#sidebar {
+	height: 100vh;
+	width: 20vw;
+	position: fixed;
+	background-color: #0b0c10;
+	text-align: center;
+	z-index: 3;
+}
+
+.inner {
+	width: 70%;
+	height: 75%;
+	text-align: right;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+nav {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding-top: 20%;
+}
+
+#sidebar li {
+	display: block;
+	line-height: 1.75;
+	padding-top: 20%;
+	padding-bottom: 5%;
+}
+
+#sidebar li a {
+	color: #c5c6c7;
+	text-decoration: none;
+	font-size: .9em;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.gradientBorder {
+	width: 100%;
+	background-image: -webkit-linear-gradient(left, #66fcf1 33%, #45a29e 67%);
+	background-image: -o-linear-gradient(left, #66fcf1 33%, #45a29e 67%);
+	background-image: linear-gradient(to right, #66fcf1 33%, #45a29e 67%);
+	padding: 1.5px;
+}
+
+#container {
+	width: 79vw;
+	float: right;
+}
+
+/*#welcomeBackground {
+	height: 100vh;
+	background-color: #ccefff;
+	background-image: url('background1.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: 0 70%;
+
+}*/
+
+#welcomeSection {
+	height: 100vh;
+	width: 100%;
+	background-color: #1f2833;
+	/*opacity: .5;*/
+	text-align: right;
+	position: relative;
+	/*background-image: url('nolan.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 0 40%;*/
+	z-index: 1;
+}
+
+#welcomeContent {
+	height: 30vh;
+	width: 80%;
+	margin-left: 40px;
+	color: #45a29e;
+	text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
+				 0px 4px 3px rgba(0, 0, 0, 0.1),
+				 4px 4px 3px rgba(0, 0, 0, 0.1);
+	font-size: 2em;
+	line-height: 1.5em;
+	text-align: left;
+	position: relative;
+	top: 50%;
+	/*right: -20%;*/
+	left: 40%;
+	transform: translate(-50%, -50%);
+	z-index: 2;
+}
+
+#welcomeSection:after {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	content: '';
+	background: inherit;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	transform-origin: top left;
+	transform: skewY(4deg);
+	z-index: 1;
+}
+
+#aboutSection {
+	height: 90vh;
+	width: 100%;
+	background-color: #45a29e;
+}
+
+#about {
+	width: 100%;
+	height: 50vh;
+}
+
+#profilePic {
+	width: 50%;
+	height: 50vh;
+	display: inline-block;
+	background-image: url("nolan.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#profilePic img{
+	max-height: 100%;
+	/*display: inline-block;*/
+}
+
+#aboutHeader {
+	width: 50%;
+	display: inline-block;
+	float: right;
+	font-size: 4em;
+	line-height: 1.5em;
+	color: #c5c6c7;
+	text-align: center;
+	padding-top: 13%;
+}
+
+#aboutContent {
+	width: 100%;
+	height: 50vh;
+	background-color: #45a29e;
+	padding-top: 3%;
+}
+
+#aboutP {
+	height: 75%;
+	width: 85%;
+	margin: 0 auto;
+	font-size: 1.5em;
+	color: #c5c6c7;
+}
+
+#portfolioSection {
+	height: 200vh;
+	width: 100%;
+	margin-top: 5vh;
+	padding-top: 5vh;
+	background-color: #66fcf1;
+	z-index: 1;
+	position: relative;
+}
+
+#portfolioSection:after{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	content: '';
+	background: inherit;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	transform-origin: bottom right;
+	transform: skewY(4deg);
+	z-index: 0;
+}
+
+#wrapper {
+	height: 180vh;
+	width: 90%;
+	margin: 0 auto;
+	background-color: #1f2833;
+	border-radius: 7px;
+	border: 1px solid blue;
+	position: relative;
+	z-index: 3;
+}
+
+
+
+/*#wrapper section {
+	width: 50%;
+	height: 60vh;
+	display: inline-block;
+}
+
+#project1 {
+	border-right: 1px solid blue;
+	border-bottom: 1px solid blue;
+}
+
+#project2 {
+	border-bottom: 1px solid blue;
+	border-right: 1px solid blue;
+}
+
+#project3 {
+	width: 50%;
+	height: 60vh;
+}
+
+#project4 {
+	width: 50%;
+	height: 60vh;
+}
+
+#project5 {
+	width: 50%;
+	height: 60vh;
+}
+
+#project6 {
+	width: 50%;
+	height: 60vh;
+}*/
+#contactSection {
+	height: 100vh;
+	width: 100%;
+	background-color: #1f2833;
+	position: relative;
+	z-index: 2;
+}
+
+#contactSection:after {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	content: '';
+	background-color: #1f2833;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	transform-origin: top left;
+	transform: skewY(-4deg);
+	z-index: 1;
+}
