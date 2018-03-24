@@ -1,71 +1,971 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>NJH Portfolio</title>
-	<link rel="stylesheet" type="text/css" href="styles.css">
-</head>
-<body>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
 
-<section id="sidebar">
-	<div class="inner">
-		<nav>
-			<ul>
-				<li><a href="#">Welcome</a></li>
-				<div class="gradientBorder"></div>
+		<!-- Always force latest IE rendering engine -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-				<li><a href="#">Who I Am</a></li>
-				<div class="gradientBorder"></div>
+		<!-- Mobile Specific Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-				<li><a href="#">What I've Done</a></li>
-				<div class="gradientBorder"></div>
+		<meta name="description" content="DESCRIPTION">
+		<meta name="keywords" content="KEYWORDS">
+		<meta name="author" content="AUTHOR NAME">
 
-				<li><a href="#">Where to Reach Me</a></li>
-				<div class="gradientBorder"></div>
+		<!-- TITLE -->
+		<title>Personia - Personal Resume / CV / Portfolio HTML Template </title>
 
-			</ul>
-		</nav>
-	</div>
-</section>
+		<!-- FAVICON -->
+	    <link href="img/favicon/favicon.ico" rel="icon">
+		<link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-touch-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
 
-<div id="container">
-	
-	<div id="welcomeBackground">
-		<div id="welcomeSection">
-			<div id="welcomeContent">
-				<h2>Nolan James Harris</h2>
-				<p>Seeking to improve the web <br>one keystroke at a time</p>
+		<!-- BOOTSTRAP CSS -->
+		<link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+
+	    <!-- MAGNIFIC POPUP CORE CSS -->
+	    <link href="css/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+		<!-- FONT-AWESOME CSS -->
+		<link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+
+		<!-- MAIN STYLE CSS -->
+		<link rel="stylesheet" href="css/style.css">
+
+		<!-- RESPONSIVE CSS -->
+		<link rel="stylesheet" href="css/responsive.css">
+
+		<!-- CUSTOM COLORS -->
+		<!-- <link rel="stylesheet" href="css/colors/main-color.css"> -->
+		
+		<!-- <link rel="stylesheet" href="css/colors/main-color.css"> -->
+		<!-- <link rel="stylesheet" href="css/colors/color-2.css"> -->
+		<!-- <link rel="stylesheet" href="css/colors/color-3.css"> -->
+		<link rel="stylesheet" href="css/colors/color-4.css">
+		<!-- <link rel="stylesheet" href="css/colors/color-5.css"> -->
+		<!-- <link rel="stylesheet" href="css/colors/color-6.css"> -->
+		
+	</head>
+	<body data-spy="scroll" data-target="#navbar">
+
+		<!-- =========    START LOADING    ======== -->
+		<div class="loading">
+		    <div class="sk-folding-cube">
+		        <div class="sk-cube1 sk-cube"></div>
+		        <div class="sk-cube2 sk-cube"></div>
+		        <div class="sk-cube4 sk-cube"></div>
+		        <div class="sk-cube3 sk-cube"></div>
+		    </div>
+		</div>
+		<!-- =========    END LOADING    ======== -->
+
+		<!-- =========    COLLECT THE NAV LINKS AND OTHER CONTENT FOR TOGGLING    ======== -->
+		<div class="slide-nav-btn" style="right: 2%;background: rgba(255, 255, 255, 0.05);">
+			<span></span>
+		</div>
+
+
+		<!-- =========    SIDEBAR START    ======== -->
+		<div class="sidebar slide-nav col-md-2">
+
+			<!-- Sidebar Avatar -->
+			<div class="avatar">
+				<img src="css/profiletn.jpg" alt="avatar" />
 			</div>
+
+			<!-- Content sidebar -->
+			<div class="content-sidebar">
+				<!-- Sidebar Name -->
+				<div class="sidebar-name">
+					<h3>Nolan James Harris</h3>
+					<p>Web Developer</p>
+				</div>
+				<!-- Sidebar Menu -->
+				<div class="menu navbar-sp">
+                    <nav>
+                        <ul id="navbar">
+                            <li class="active">
+                            	<a href="#home" data-scroll-nav="0" class="active">
+                            		<i class="fa fa-home"></i> Home
+                            	</a>
+                            </li>
+                        	<li>
+                            	<a href="#about" data-scroll-nav="1">
+                            		<i class="fa fa-user-o"></i> About
+                            	</a>
+                            </li>
+                       	 	<!-- <li>
+                            	<a href="#resume" data-scroll-nav="3">
+                            		<i class="fa fa-gears"></i> Resume
+                            	</a>
+                            </li> -->
+                       	 	<li>
+                            	<a href="#portfolio" data-scroll-nav="4">
+                            		<i class="fa fa-suitcase"></i> Portfolio
+                            	</a>
+                            </li>
+                       	 	<li>
+                            	<a href="#contact" data-scroll-nav="6">
+                            		<i class="fa fa-envelope-o"></i> Contact
+                            	</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+			</div>
+
 		</div>
-	</div>
+		<!-- =========    SIDEBAR END    ======== -->
 
-	<div id="aboutSection">
-		<div id="about">
-			<div id="profilePic"></div>
-			<div id="aboutHeader"><p>Me. Simply Put.<p></div>
+
+		<!-- =========    RIGHT AREA START    ======== -->
+		<div class="right-area col-md-10">
+
+			<!-- =========    HEADER    ======== -->
+			<section class="header" id="home" data-scroll-index="0">
+
+				<!-- Header Content -->
+				<div class="header-overlay">
+					<div class="middle-c">
+						<div class="middle-l text-center">
+							<div class="m-content">
+								<h5>Hi! I'm</h5>
+								<h1>Nolan Harris</h1>
+								<h3>I am a <span></span></h3>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- End Header Content -->
+
+			</section>
+			<!-- =========    END HEADER    ======== -->
+
+
+			<!-- =========    ABOUT ME SECTION    ======== -->
+			<section class="about-me sect-spac" id="about" data-scroll-index="1">
+				<div class="sect-container">
+					<div class="s-title">
+						<h3>Me. Simply Put.</h3>
+						<div class="separator align-center">
+							<span></span>
+						</div>
+					</div>
+
+	                <!-- START ABOUT TEXT AREA -->
+	                <div class="about-text">
+	                    <p>Hi, I'm Nolan, and, even though I hate bragging about myself, I'm pretty great! I am a self-taught web developer always looking for the next piece of the "experience" puzzle. I was afforded the incredible opportunity to take 3 months off to go live in Germany and spend every minute learning as much as I could about Full-Stack Web Development. Pretty dope... I know. If you're looking for your next "Thank the lord I hired that guy" moment, I'm your man. I am a quick study and I play nice with others. Reach out to me and let's change the world! Or... make some cool stuff at least.</p>
+
+	                </div>
+	                <!-- / END ABOUT TEXT AREA -->
+
+	                <!-- START ABOUT INFO AREA -->
+	                <div class="about-info col-md-4">
+
+						<ul class="info-list">
+							<li><span class="title">Age :</span><span class="value">28</span></li>
+							<li><span class="title">Residence :</span><span class="value">Austin, Tx</span></li>
+							<!-- <li><span class="title">Address :</span><span class="value">88 Some Street</span></li> -->
+							<li><span class="title">e-mail :</span><span class="value"><a href="mailto:email@example.com">thenolanjames@gmail.com</a></span></li>
+							<li><span class="title">Phone :</span><span class="value">+01 817 733 4683</span></li>
+							<!-- <li><span class="title">Skype :</span><span class="value">alex.smith</span></li> -->
+							<li><span class="title">Freelance :</span><span class="value available">Available</span></li>
+	                    </ul>
+
+
+	                </div>
+	                <!-- / END ABOUT INFO AREA -->
+
+	                <!-- START ABOUT SKILLS AREA -->
+	                <div class="about-skills col-md-8">
+						<ul>
+							<li>
+								<span>HTML</span>
+								<div class="progress">
+									<div class="progress-bar" data-percent="95" style="width: 95%;" >
+					                    <span>95%</span>
+					                 </div>
+				                 </div>
+							</li>
+							<li>
+								<span>CSS</span>
+								<div class="progress">
+									<div class="progress-bar" data-percent="90" style="width: 90%;">
+					                    <span>90%</span>
+					                 </div>
+				                 </div>
+							</li>
+							<li>
+								<span>JAVASCRIPT</span>
+								<div class="progress">
+									<div class="progress-bar" data-percent="65" style="width: 85%;">
+					                    <span>85%</span>
+					                 </div>
+				                 </div>
+							</li>
+							<li>
+								<span>JQUERY</span>
+								<div class="progress">
+									<div class="progress-bar" data-percent="50" style="width: 70%;">
+					                    <span>70%</span>
+					                 </div>
+				                 </div>
+							</li>
+							<li>
+								<span>NODE.JS & EXPRESS</span>
+								<div class="progress">
+									<div class="progress-bar" data-percent="60" style="width: 60%;">
+					                    <span>60%</span>
+					                 </div>
+				                 </div>
+							</li>
+						</ul>
+
+	                </div>
+	                <!-- / END ABOUT SKILLS AREA -->
+
+					<div class="clear"></div>
+
+				</div>
+			</section>
+			<!-- =========    END ABOUT ME SECTION    ======== -->
+
+
+					<!-- RESUME CONTENT -->
+					<!-- <div class="resume-c">
+						<div class="page-content">
+
+						<div class="row">
+								<div class="col-sm-12 col-md-6 col-lg-6">
+								  <div class="block">
+								    <div class="block-title">
+								      <h3><i class="fa fa-graduation-cap"></i> Education</h3>
+								    </div>
+
+								    <div class="timeline"> -->
+								      <!-- Education 1 -->
+								      <!-- <div class="timeline-item">
+								        <h4 class="item-title">Computer Science</h4>
+								        <span class="item-period">2015</span>
+								        <span class="item-small">University of Studies</span>
+								        <p class="item-description">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor .</p>
+								      </div> -->
+								      <!-- / Education 1 -->
+
+								      <!-- Education 2 -->
+								      <!-- <div class="timeline-item">
+								        <h4 class="item-title">Master Degree Of Design</h4>
+								        <span class="item-period">2010</span>
+								        <span class="item-small">University of Studies</span>
+								        <p class="item-description">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor .</p>
+								      </div> -->
+								      <!-- / Education 2 -->
+
+								      <!-- Education 3 -->
+								      <!-- <div class="timeline-item">
+								        <h4 class="item-title">Graphic Design School</h4>
+								        <span class="item-period">2010</span>
+								        <span class="item-small">University of Studies</span>
+								        <p class="item-description">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor .</p>
+								      </div> -->
+								      <!-- / Education 3 -->
+								   <!--    
+								    </div>
+								  </div>
+								</div>
+
+								<div class="experience col-sm-12 col-md-6 col-lg-6">
+								  <div class="block">
+								    <div class="block-title">
+								      <h3><i class="fa fa-bookmark"></i> Experience</h3>
+								    </div>
+
+								    <div class="timeline"> -->
+								      <!-- Experience 1 -->
+								      <!-- <div class="timeline-item">
+								        <h4 class="item-title">Frontend-developer</h4>
+								        <span class="item-period">Dec 2012 - Current</span>
+								        <span class="item-small">Glory creative Studio</span>
+								        <p class="item-description">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor .</p>
+								      </div> -->
+								      <!-- / Experience 1 -->
+
+								      <!-- Experience 2 -->
+								      <!-- <div class="timeline-item">
+								        <h4 class="item-title">Creative Designer</h4>
+								        <span class="item-period">Dec 2011 - Nov 2012</span>
+								        <span class="item-small">Sharper Creative studio</span>
+								        <p class="item-description">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor .</p>
+								      </div> -->
+								      <!-- / Experience 2 -->
+
+								      <!-- Experience 3 -->
+								      <!-- <div class="timeline-item">
+								        <h4 class="item-title">UI & UX Designer</h4>
+								        <span class="item-period">Jan 2010 - Dec 2011</span>
+								        <span class="item-small">Google inc Ltd</span>
+								        <p class="item-description">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor .</p>
+								      </div> -->
+								      <!-- / Experience 3 -->
+								    <!-- </div>
+								  </div>
+								</div>
+
+		               		</div>
+						</div>
+					</div> -->
+					<!-- END RESUME CONTENT -->
+				
+				<!-- </div>
+			</section> -->
+			<!-- =========    END RESUME SECTION    ======== -->
+
+
+			<!-- =========    DOWNLOAD SECTION    ======== -->
+			<!-- <section class="download sect-spac">
+				<div class="sect-container"> -->
+
+					<!-- DOWNLOAD LEFT TEXT -->
+					<!-- <div class="download-text col-md-9 col-xs-12">
+						<h4>Download My Resume</h4>
+						<span>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</span>
+					</div> -->
+
+					<!-- DOWNLOAD RIGHT BUTTON -->
+					<!-- <div class="download-button col-md-3 col-xs-12">
+						<a href="#" target="_blank"><i class="fa fa-download"></i> Download</a>
+					</div>
+
+				</div>
+			</section> -->
+			<!-- =========    DOWNLOAD SECTION    ======== -->
+
+
+			<!-- =========    PORTFOLIO SECTION    ======== -->
+			<section class="portfolio sect-spac text-center" id="portfolio" data-scroll-index="4">
+				<div class="sect-container">
+
+					<div class="s-title">
+						<h3>My Handywork</h3>
+						<div class="separator align-center">
+							<span></span>
+						</div>
+					</div>
+
+					<!-- PORTFOLIO FILTER BUTTONS -->
+					<div class="button-group filter-portfolio">
+					  <a class="button is-checked" data-filter="*">all</a>
+					  <a class="button " data-filter=".item-javascript">Javascript</a>
+					  <a class="button" data-filter=".item-fullstack">Full-Stack</a>
+					  <a class="button" data-filter=".item-webapp">Web-App</a>
+					  <!-- <a class="button" data-filter=".item-recreate">Recreate</a> -->
+					</div>
+					<!-- END PORTFOLIO FILTER BUTTONS -->
+
+					<!-- PORTFOLIO -->
+					<div class="portfolio-content">
+					  
+						<!-- PORTFOLIO ITEM -->
+						<div class="portfolio-item item-javascript item-fullstack item-webapp">
+							<div class="portfolio-caption">
+								<a class="modal-image" href="#modal-image-1" >
+									
+									<!-- PORTFOLIO IMAGE -->
+							  		<img src="css/reachback.png" alt="Image Title" />
+
+							  		<!-- PORTFOLIO TITLE -->
+								  	<div class="overlay">
+								  		<div class="info-content">
+									  		<h4>The ReachBack</h4>
+									  		<span>Full-Stack</span>
+										</div>
+								  	</div>
+
+								  	<!-- POPUP WHITE BOX -->
+								  	<div id="modal-image-1" class="white-popup mfp-hide">
+
+								  		<!-- POPUP WHITE BOX IMAGE -->
+									  	<img src="css/reachback.png" alt="Image Title" />
+
+									  	<div>
+										  	<!-- POPUP WHITE BOX TITLE -->
+										  	<h3>The ReachBack - Everything Disc Golf</h3>
+
+										  	<!-- POPUP WHITE BOX DESCRIPTION -->
+										  	<p>With Disc Golf being one of my passions, I am very excited about this project. This is the main reason I feel comfortable with back-end concepts like <strong>databases</strong>, <strong>user authentication</strong> and <strong>RESTful routing</strong>. I used <strong>Node.js</strong> with <strong>Express</strong>, <strong>MongoDB</strong>, <strong>Passport</strong>, and several other packages to create The ReachBack. Users scores are logged into a database for later reference and the 'Stats' page shows a leaderboard for all users. Also areas to read about different courses and watch full disc golf videos.</p>
+									 	</div>
+									</div>
+									<!-- END POPUP WHITE BOX -->
+
+								</a>
+							</div>
+						</div>
+
+						<!-- PORTFOLIO ITEM -->
+						<div class="portfolio-item item-photo">
+							<div class="portfolio-caption">
+								<a class="modal-image" href="#modal-image-2" >
+									
+									<!-- PORTFOLIO IMAGE -->
+							  		<img src="http://via.placeholder.com/640x420" alt="Image Title" />
+
+							  		<!-- PORTFOLIO TITLE -->
+								  	<div class="overlay">
+								  		<div class="info-content">
+									  		<h4>Project Title</h4>
+									  		<span>Photo</span>
+										</div>
+								  	</div>
+
+								  	<!-- POPUP WHITE BOX -->
+								  	<div id="modal-image-2" class="white-popup mfp-hide">
+
+								  		<!-- POPUP WHITE BOX IMAGE -->
+									  	<img src="http://via.placeholder.com/640x420" alt="Image Title" />
+
+									  	<div>
+										  	<!-- POPUP WHITE BOX TITLE -->
+										  	<h3>PROJECT TITLE</h3>
+
+										  	<!-- POPUP WHITE BOX DESCRIPTION -->
+										  	<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.</p>
+									 	</div>
+									</div>
+									<!-- END POPUP WHITE BOX -->
+
+								</a>
+							</div>
+						</div>
+
+						<!-- PORTFOLIO ITEM -->
+						<div class="portfolio-item item-design">
+							<div class="portfolio-caption">
+								<a class="modal-image" href="#modal-image-3" >
+									
+									<!-- PORTFOLIO IMAGE -->
+							  		<img src="http://via.placeholder.com/420x420" alt="Image Title" />
+
+							  		<!-- PORTFOLIO TITLE -->
+								  	<div class="overlay">
+								  		<div class="info-content">
+									  		<h4>Project Title</h4>
+									  		<span>Design</span>
+										</div>
+								  	</div>
+
+								  	<!-- POPUP WHITE BOX -->
+								  	<div id="modal-image-3" class="white-popup mfp-hide">
+
+								  		<!-- POPUP WHITE BOX IMAGE -->
+									  	<img src="http://via.placeholder.com/420x420" alt="Image Title" />
+
+									  	<div>
+										  	<!-- POPUP WHITE BOX TITLE -->
+										  	<h3>PROJECT TITLE</h3>
+
+										  	<!-- POPUP WHITE BOX DESCRIPTION -->
+										  	<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.</p>
+									 	</div>
+									</div>
+									<!-- END POPUP WHITE BOX -->
+
+								</a>
+							</div>
+						</div>
+
+						<!-- PORTFOLIO ITEM -->
+						<div class="portfolio-item item-javascript item-webapp">
+							<div class="portfolio-caption">
+								<a class="modal-image" href="#modal-image-4" >
+									
+									<!-- PORTFOLIO IMAGE -->
+							  		<img src="css/fbgenerator.png" alt="Image Title" />
+
+							  		<!-- PORTFOLIO TITLE -->
+								  	<div class="overlay">
+								  		<div class="info-content">
+									  		<h4>FB Profile Generator</h4>
+									  		<span>Javascript & AJAX</span>
+										</div>
+								  	</div>
+
+								  	<!-- POPUP WHITE BOX -->
+								  	<div id="modal-image-4" class="white-popup mfp-hide">
+
+								  		<!-- POPUP WHITE BOX IMAGE -->
+									  	<img src="css/fbgenerator.png" alt="Image Title" />
+
+									  	<div>
+										  	<!-- POPUP WHITE BOX TITLE -->
+										  	<h3>FB Profile Generator</h3>
+
+										  	<!-- POPUP WHITE BOX DESCRIPTION -->
+										  	<p>My introduction to API's, this single page app generates fake FaceBook profiles each time you click the button. User's friends, pictures, user info and of course Ron Swanson quotes are refreshed without page reload. Simple, but it helped my understanding of ajax calls.</p>
+									 	</div>
+									</div>
+									<!-- END POPUP WHITE BOX -->
+
+								</a>
+							</div>
+						</div>
+
+						<!-- PORTFOLIO ITEM -->
+						<div class="portfolio-item item-javascript item-webapp">
+							<div class="portfolio-caption">
+								<a class="modal-image" href="#modal-image-5" >
+									
+									<!-- PORTFOLIO IMAGE -->
+							  		<img src="css/shortstraw.png" alt="Image Title" />
+
+							  		<!-- PORTFOLIO TITLE -->
+								  	<div class="overlay">
+								  		<div class="info-content">
+									  		<h4>The Short Straw</h4>
+									  		<span>Web App</span>
+										</div>
+								  	</div>
+
+								  	<!-- POPUP WHITE BOX -->
+								  	<div id="modal-image-5" class="white-popup mfp-hide">
+
+								  		<!-- POPUP WHITE BOX IMAGE -->
+									  	<img src="css/shortstraw.png" alt="Image Title" />
+
+									  	<div>
+										  	<!-- POPUP WHITE BOX TITLE -->
+										  	<h3>The Short Straw</h3>
+
+										  	<!-- POPUP WHITE BOX DESCRIPTION -->
+										  	<p>Just to show you my roots! Here is my first Web App. A very simple javascript based app to let users "draw straws." One will be the short straw and it will be random every time. Works for 2 - 6 players. I have definitely come a long way since this was typed up.</p>
+									 	</div>
+									</div>
+									<!-- END POPUP WHITE BOX -->
+
+								</a>
+							</div>
+						</div>
+
+						<!-- PORTFOLIO ITEM -->
+						<div class="portfolio-item item-design">
+							<div class="portfolio-caption">
+								<a class="modal-image" href="#modal-image-6" >
+									
+									<!-- PORTFOLIO IMAGE -->
+							  		<img src="http://via.placeholder.com/648x600" alt="Image Title" />
+
+							  		<!-- PORTFOLIO TITLE -->
+								  	<div class="overlay">
+								  		<div class="info-content">
+									  		<h4>Project Title</h4>
+									  		<span>Design</span>
+										</div>
+								  	</div>
+
+								  	<!-- POPUP WHITE BOX -->
+								  	<div id="modal-image-6" class="white-popup mfp-hide">
+
+								  		<!-- POPUP WHITE BOX IMAGE -->
+									  	<img src="http://via.placeholder.com/640x600" alt="Image Title" />
+
+									  	<div>
+										  	<!-- POPUP WHITE BOX TITLE -->
+										  	<h3>PROJECT TITLE</h3>
+
+										  	<!-- POPUP WHITE BOX DESCRIPTION -->
+										  	<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.</p>
+									 	</div>
+									</div>
+									<!-- END POPUP WHITE BOX -->
+
+								</a>
+							</div>
+						</div>
+
+						<!-- PORTFOLIO ITEM -->
+						<div class="portfolio-item item-design">
+							<div class="portfolio-caption">
+								<a class="modal-image" href="#modal-image-7" >
+									
+									<!-- PORTFOLIO IMAGE -->
+							  		<img src="http://via.placeholder.com/840x480" alt="Image Title" />
+
+							  		<!-- PORTFOLIO TITLE -->
+								  	<div class="overlay">
+								  		<div class="info-content">
+									  		<h4>Project Title</h4>
+									  		<span>Design</span>
+										</div>
+								  	</div>
+
+								  	<!-- POPUP WHITE BOX -->
+								  	<div id="modal-image-7" class="white-popup mfp-hide">
+
+								  		<!-- POPUP WHITE BOX IMAGE -->
+									  	<img src="http://via.placeholder.com/840x480" alt="Image Title" />
+
+									  	<div>
+										  	<!-- POPUP WHITE BOX TITLE -->
+										  	<h3>PROJECT TITLE</h3>
+
+										  	<!-- POPUP WHITE BOX DESCRIPTION -->
+										  	<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.</p>
+									 	</div>
+									</div>
+									<!-- END POPUP WHITE BOX -->
+
+								</a>
+							</div>
+						</div>
+
+						<!-- PORTFOLIO ITEM -->
+						<div class="portfolio-item item-photoshop">
+							<div class="portfolio-caption">
+								<a class="modal-image" href="#modal-image-8" >
+									
+									<!-- PORTFOLIO IMAGE -->
+							  		<img src="http://via.placeholder.com/840x470" alt="Image Title" />
+
+							  		<!-- PORTFOLIO TITLE -->
+								  	<div class="overlay">
+								  		<div class="info-content">
+									  		<h4>Project Title</h4>
+									  		<span>Photoshop</span>
+										</div>
+								  	</div>
+
+								  	<!-- POPUP WHITE BOX -->
+								  	<div id="modal-image-8" class="white-popup mfp-hide">
+
+								  		<!-- POPUP WHITE BOX IMAGE -->
+									  	<img src="http://via.placeholder.com/840x470" alt="Image Title" />
+
+									  	<div>
+										  	<!-- POPUP WHITE BOX TITLE -->
+										  	<h3>PROJECT TITLE</h3>
+
+										  	<!-- POPUP WHITE BOX DESCRIPTION -->
+										  	<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.</p>
+									 	</div>
+									</div>
+									<!-- END POPUP WHITE BOX -->
+
+								</a>
+							</div>
+						</div>
+					</div>
+					<!-- END PORTFOLIO -->
+
+				</div>
+			</section>
+			<!-- =========    END PORTFOLIO SECTION    ======== -->
+
+
+			<!-- =========    TESTIMONIALS SECTION    ======== -->
+			<section class="testimonials sect-spac text-center">
+				<div class="sect-container">
+
+					<div id="carousel" class="carousel slide" data-ride="carousel">
+						<div class="carousel-inner" role="listbox">
+							
+							<!-- CLIENT ITEM -->
+							<div class="item active">
+								<div class="testimonial-box col-md-8 col-xs-10">
+									<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+									<!-- TESTIMONIAL NAME -->
+									<h3>Jessi Walsh<span>Manager @ Company</span></h3>
+								</div>
+							</div>
+
+							<!-- CLIENT ITEM -->
+							<div class="item">
+								<div class="testimonial-box col-md-8 col-xs-10">
+									<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus. </p>
+									<!-- TESTIMONIAL NAME -->
+									<h3>Frank Rouse<span>Designer @ Company</span></h3>
+								</div>
+							</div>
+
+
+							<!-- Next And Previous buttons -->
+							<div class="prev-next col-md-12">
+								<a href="#carousel" role="button" data-slide="prev">
+								<span>
+									<i class="fa fa-long-arrow-left"></i>
+								</span>
+								</a>
+								<a href="#carousel" role="button" data-slide="next">
+								<span>
+									<i class="fa fa-long-arrow-right"></i>
+								</span>
+								</a>
+							</div>						
+
+						</div>
+					</div>
+
+				</div>
+			</section>
+			<!-- =========    END TESTIMONIALS SECTION    ======== -->
+
+
+			<!-- =========    LATEST POSTS SECTION    ======== -->
+			<!-- <section class="posts sect-spac text-center">
+				<div class="sect-container">
+					
+					<div class="s-title">
+						<h3>LATEST POSTS</h3>
+						<div class="separator align-center">
+							<span></span>
+						</div>
+					</div> -->
+
+					<!-- BLOG / ARTICLE -->
+					<!-- <div class="post-item col-md-6">
+						<div class="p-item">
+							<a href="#">
+								<div class="p-picture">
+ -->
+									<!-- post image -->
+									<!-- <img src="http://via.placeholder.com/360x240" alt="Image-Title" />
+									<div class="overlay">
+										<i class="fa fa-link"></i>
+									</div>
+								</div>
+							</a>
+							<div class="p-content">
+								<a href="#">
+									<h3>Original and Innovative Web Layouts</h3>
+								</a>
+								<div class="post-meta">
+									<ul>
+										<li>
+											<i class="fa fa-user-o"></i>
+											<a href="#">
+												<span>Admin</span>
+											</a>
+										</li>
+										<li>
+											<i class="fa fa-calendar-o"></i>
+											<a href="#">
+												<span>8 June, 2017</span>
+											</a>
+										</li>
+										<li>
+											<i class="fa fa-commenting-o"></i>
+											<a href="#">
+												<span>11 Comment</span>
+											</a>
+										</li>
+									</ul>
+								</div> -->
+								<!-- Post Text -->
+								<!-- <p>It is a paradisematic country. the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to ...</p>
+
+								<a href="#" class="more">Read More <i class="fa fa-long-arrow-right"></i></a>
+							</div>
+						</div>
+					</div> -->
+
+					<!-- BLOG / ARTICLE -->
+					<!-- <div class="post-item col-md-6" id="blog" data-scroll-index="5">
+						<div class="p-item">
+							<a href="#">
+								<div class="p-picture"> -->
+
+									<!-- post image -->
+									<!-- <img src="http://via.placeholder.com/360x240" alt="Image-Title" />
+									<div class="overlay">
+										<i class="fa fa-link"></i>
+									</div>
+								</div>
+							</a>
+							<div class="p-content">
+								<a href="#">
+									<h3>Designed for Everyone, Everywhere</h3>
+								</a>
+								<div class="post-meta">
+									<ul>
+										<li>
+											<i class="fa fa-user-o"></i>
+											<a href="#">
+												<span>Admin</span>
+											</a>
+										</li>
+										<li>
+											<i class="fa fa-calendar-o"></i>
+											<a href="#">
+												<span>6 June, 2017</span>
+											</a>
+										</li>
+										<li>
+											<i class="fa fa-commenting-o"></i>
+											<a href="#">
+												<span>2 Comment</span>
+											</a>
+										</li>
+									</ul>
+								</div> -->
+								<!-- Post Text -->
+								<!-- <p>It is a paradisematic country. the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to ...</p>
+
+								<a href="#" class="more">Read More <i class="fa fa-long-arrow-right"></i></a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</section> -->
+			<!-- =========    END LATEST POSTS SECTION    ======== -->
+
+
+			<!-- =========    CONTACT SECTION    ======== -->
+			<section class="contact sect-spac text-center" id="contact" data-scroll-index="6">
+				<div class="sect-container">
+
+					<div class="s-title">
+						<h3>GET IN TOUCH</h3>
+						<div class="separator align-center">
+							<span></span>
+						</div>
+					</div>
+
+					<div class="contact-info col-md-10 col-sm-10 col-xs-12">
+						<ul>
+							<li class="col-md-4">
+								<i class="fa fa-map-marker"></i>
+								<span>Austin, Tx USA</span>
+							</li>
+							<li class="col-md-4">
+								<i class="fa fa-envelope-o"></i>
+								<span>thenolanjames@gmail.com</span>
+							</li>
+							<li class="col-md-4">
+								<i class="fa fa-phone"></i>
+								<span>(817) 733 4683</span>
+							</li>
+						</ul>
+					</div>
+					
+					<div class="contact-form col-md-10 col-sm-11 col-xs-12">
+						<form action="php/contact.php" method="POST" class="contact-forum">
+
+							<div class="contact-item col-md-12">
+								<input type="text" name="name" placeholder="Name *" required="required" >
+							</div>
+							<div class="contact-item col-md-12">
+								<input type="text" name="email" placeholder="Email *" required="required" >
+							</div>
+							<div class="contact-item col-md-12">
+								<input type="text" name="subject" placeholder="Subject" >
+							</div>
+							<div class="contact-item col-md-12">
+								<textarea id="form_message" name="message" placeholder="Message *" rows="4" required="required" data-error="Message."></textarea>
+							</div>
+							<div class="clear"></div>
+							<div class="contact-item col-sm-12">
+								<input type="submit" class="button disabled" value="Send Message">
+							</div>
+						</form>
+					</div>
+
+				</div>
+			</section>
+			<!-- =========    END CONTACT SECTION    ======== -->
+
+
+			<!-- =========    FOOTER SECTION    ======== -->
+			<footer class="footer footer-sect text-center">
+				<div class="sect-container">
+
+		            <!-- START SOCIAL MEDIA -->
+		            <div class="social-n">
+
+		                <!-- FACEBOOK -->
+		                <a href="#facebook-account-url" target="_blank">
+		                    <div class="s-icon facebook">
+		                        <i class="fa fa-facebook"></i>
+		                    </div>
+		                </a>
+
+		                <!-- TWITTER -->
+		                <a href="#twitter-account-url" target="_blank">
+		                    <div class="s-icon twitter">
+		                        <i class="fa fa-twitter"></i>
+		                    </div>
+		                </a>
+
+		                <!-- GOOGLE PLUS -->
+		                <a href="#google-plus-account-url" target="_blank">
+		                    <div class="s-icon google-plus">
+		                        <i class="fa fa-google-plus"></i>
+		                    </div>
+		                </a>
+
+		                <!-- LINKEDIN -->
+		                <a href="#linkedin-account-url" target="_blank">
+		                    <div class="s-icon snapchat-ghost">
+		                        <i class="fa fa-snapchat-ghost"></i>
+		                    </div>
+		                </a> 
+
+		                <!-- PENETIRES -->
+		                <a href="#penetires-account-url" target="_blank">
+		                    <div class="s-icon soundcloud">
+		                        <i class="fa fa-soundcloud"></i>
+		                    </div>
+		                </a> 
+
+		                <!-- YOUTUBE -->
+		                <a href="#youtube-account-url" target="_blank">
+		                    <div class="s-icon youtube">
+		                        <i class="fa fa-youtube"></i>
+		                    </div>
+		                </a>
+
+		                <!-- INSTAGRAM -->
+		                <a href="#instagram-account-url" target="_blank">
+		                    <div class="s-icon instagram">
+		                        <i class="fa fa-instagram"></i>
+		                    </div>
+		                </a>
+
+		            </div>
+		            <!-- END SOCIAL MEDIA -->
+
+				</div>
+			</footer>
+			<!-- =========    END FOOTER SECTION    ======== -->
+
 		</div>
-		<div id="aboutContent">
-			<div id="aboutP">This is where I am going to say some crap about myself even though I dont really wanna. This is where all the floating of my own boat shall go. All up in this div right herrrrr.</div>
-		</div>
-
-	</div>
-
-	<div id="portfolioSection">
-		<div id="wrapper">
-			<section id="project1"></section>
-			<section id="project2"></section>
-			<section id="project3"></section>
-			<section id="project4"></section>
-			<section id="project5"></section>
-			<section id="project6"></section>
-		</div>
-	</div>
-
-	<div id="contactSection"></div>
-
-</div>
+		<!-- =========    RIGHT END    ======== -->
 
 
-<script type="text/javascript" src="../jQuery/jquery.min.js"></script>
-<script type="text/javascript" src="app.js"></script>
-</body>
-</html>
+
+		<!-- ====== JS ======  -->
+		<!-- JQUERY -->
+		<script type="text/javascript" src="js/jquery.v1.12.4.js"></script>
+		<!-- BOOTSTRAP JS -->
+		<script src="js/bootstrap.min.js"></script>
+		<!-- TYPED JS -->
+		<script src="js/typed.js"></script>
+	    <!-- Magnific Popup core JS file -->
+	    <script src="js/jquery.magnific-popup.min.js"></script>
+		<!-- COUNT TO JS -->
+		<script src="js/jquery.countTo.js"></script>
+		<!-- ISOTOPE JS -->
+		<script src="js/isotope.pkgd.min.js"></script>
+		<!-- MASONRY JS -->
+		<script src="js/masonry.pkgd.min.js"></script>
+		<!-- PARSLEY file -->
+	    <script src="js/parsley.js"></script>
+	    <!-- SCROLLIT file -->
+	    <script src="js/scrollIt.min.js"></script>
+		<!-- custom js -->
+		<script src="js/main.js"></script>
+
+	</body>
+	</html>
