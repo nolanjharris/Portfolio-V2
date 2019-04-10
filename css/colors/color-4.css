@@ -1,0 +1,85 @@
+/* ========================================================================================= */
+/* ======================================= MAIN COLOR : #3BAFDA =================================== */
+/* ========================================================================================= */
+.avatar {
+    border: 2px solid #3BAFDA;
+}
+.sidebar-name p {
+    color: #3BAFDA;
+}
+.menu ul li a {
+    color: #3BAFDA;
+}
+.header .middle-l h3 span {
+    color: #3BAFDA;
+}
+.info-list li .title:after {
+    background-color: #3BAFDA;
+}
+.about-skills li .progress-bar::before {
+    background: #3BAFDA;
+}
+.about-skills li .progress-bar span {
+    border: 1px solid #3BAFDA;
+}
+.services .service-box .icon i {
+    color: #3BAFDA;
+}
+.services .service-box .service-title h4 {
+    color: #3BAFDA;
+}
+.timeline-item {
+    border-left: 2px solid #3BAFDA;
+}
+.timeline-item:before {
+    border: 2px solid #3BAFDA;
+}
+.timeline-item:after {
+    background-color: #3BAFDA;
+}
+.timeline-item .item-period {
+    color: #3BAFDA;
+}
+.download .download-button a {
+    background: #3BAFDA;
+    border: 1px solid #3BAFDA;
+}
+.portfolio .filter-portfolio .is-checked {
+    color: #3BAFDA;
+    border-bottom: 1px solid #3BAFDA;
+}
+.portfolio .portfolio-caption .info-content span {
+    color: #3BAFDA;
+}
+.testimonial-box h3 {
+    color: #3BAFDA;
+}
+.posts .p-content .post-meta span:hover {
+    color: #3BAFDA;
+}
+.posts .p-content .more:hover {
+    color: #3BAFDA;
+}
+.contact-item input:focus,
+.contact-item textarea:focus {
+    border-bottom: 1px solid #3BAFDA;
+}
+.contact-item .button {
+    background: #3BAFDA;
+    border: 1px solid #3BAFDA;
+}
+.footer .f-co a {
+    border-bottom: 1px solid #3BAFDA;
+}
+.social-n .s-icon:hover {
+    background-color: #3BAFDA;
+}
+.slide-nav-btn span {
+    background: #3BAFDA;
+}
+.slide-nav-btn span:after {
+    background: #3BAFDA;
+}
+.slide-nav-btn span:before {
+    background: #3BAFDA;
+}

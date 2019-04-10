@@ -23,7 +23,7 @@ $(document).ready(function () {
 
     // Typed JS TRIGGER
   	$(".header .middle-l h3 span").typed({
-  		strings: ["Web Developer", "Problem Solver", "Total Goofball"],
+  		strings: ["Web Developer", "Problem Solver", "Team Player"],
   		loop: true,
   		startDelay: 1e3,
   		backDelay: 3e3
