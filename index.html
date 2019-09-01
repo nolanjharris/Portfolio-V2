@@ -982,8 +982,10 @@
 				</div>
 
 				<div class="contact-form col-md-10 col-sm-11 col-xs-12">
-					<form action="php/contact.php" method="POST" class="contact-forum" data-netlify="true">
-
+					<form method="POST" class="contact-forum" netlify-honeypot="bot-field" data-netlify="true">
+						<p style='display: none'>
+							<label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+						</p>
 						<div class="contact-item col-md-12">
 							<input type="text" name="name" placeholder="Name *" required="required">
 						</div>
