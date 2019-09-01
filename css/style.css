@@ -827,7 +827,7 @@ p {
 
 /* 10.2  = PORTFOLIO PICTURES */
 .portfolio .portfolio-item {
-    padding: 0 6px 10px 0;
+    padding: 2px;
     width: 33%;
 }
 

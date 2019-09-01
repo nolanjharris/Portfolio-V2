@@ -1,0 +1,344 @@
+/* Core Styles */
+
+body {
+    margin: 0;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #01558a;
+    color: #fff;
+    font-size: 1.1em;
+    line-height: 1.5;
+    text-align: center;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-around;
+    align-items: center;
+}
+
+#loopy {
+    font-family: 'Dancing Script';
+    padding: 0;
+    font-size: 70px;
+    line-height: 10px;
+    padding-top: 60px;
+    position: absolute;
+    top: -40px;
+    left: 20px;
+    color: #a2d8f7;
+    /* left: calc(50% - 70px); */
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+    padding: 1em 0;
+}
+
+p {
+    margin: 0;
+    padding: 1em 0;
+}
+
+.btn {
+    display: inline-block;
+    background: #2690d4;
+    color: #fff;
+    text-decoration: none;
+    /* border-radius: 1.2em; */
+    border: 1px solid #3aaef7;
+    margin: .5em 0;
+    padding: .7em 1.4em;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #848af1;
+}
+
+/* section-d */
+
+#step-sequencer {
+    overflow: hidden;
+    width: 775px;
+    height: fit-content;
+    padding: 20px;
+    background: #eeeef0;
+    border: 2px solid #6bc7fc;
+    border-radius: 2px;
+    /* text-align: center; */
+    display: relative;
+}
+
+.player {
+    height: fit-content;
+    width: 775px;
+    /* border: 1px solid #818283; */
+    margin-top: 110px;
+    margin-bottom: 0;
+    /* min-width: 100vw; */
+    white-space: nowrap;
+    float: left;
+    overflow: visible;
+    overflow-x: scroll;
+    background: #eeeef1;
+}
+
+#playerControls {
+    /* display: flex; */
+    height: 110px;
+    width: 775px;
+    margin: auto;
+    position: fixed;
+    z-index: 10;
+    /* justify-items: center; */
+    background: #eeeef1;
+    border-bottom: 1px solid #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#playerControlButtons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#playerControlButtons .btn {
+    margin: 0;
+    height: 65px;
+    width: 80px;
+    float: left;
+    background: #59bcf5;
+    text-align: center;
+}
+
+#tempoDiv {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-bottom: 2=10px;
+}
+
+#tempoDiv>h4 {
+    margin: 0 15px;
+    color: #01558a;
+}
+
+.slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 90%;
+    height: 5px;
+    background: #01558a;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    display: inline-block;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #3eb0f1;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #3eb0f1;
+}
+
+#tempoSlider {
+    float: left;
+    /* margin-top: 15px; */
+}
+
+.instrumentControls .slider {
+    width: 200px;
+    float: left;
+    padding: 17.5 0;
+}
+
+.instrumentControls select {
+    width: 200px;
+    float: left;
+    padding: 17.5 0;
+}
+
+#playerControls .btn:hover {
+    background: #95cff3;
+}
+
+#playerControls img {
+    height: 100%;
+    width: auto;
+    margin: auto;
+}
+
+/* width */
+.player::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+/* Track */
+.player::-webkit-scrollbar-track {
+    background: #6bc7fc;
+}
+
+/* Handle */
+.player::-webkit-scrollbar-thumb {
+    background: #01558a;
+}
+
+/* Handle on hover */
+.player::-webkit-scrollbar-thumb:hover {
+    background: #1679b6;
+}
+
+.player .soundType {
+    position: relative;
+    float: left;
+    width: 100px;
+    height: 38px;
+    font-size: 2em;
+    background: #6bc7fc;
+    color: #1679b6;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: .8em;
+    line-height: 38px;
+    margin: 0;
+    border-radius: 0;
+    border: none;
+    border: 1px solid #7fa7be;
+    display: block;
+}
+
+.player>div {
+    margin-top: 30px;
+}
+
+.player>div>.instrumentControls>h3 {
+    padding-left: 15px;
+    width: 87px;
+    margin: 0;
+    text-align: left;
+    color: #01558a;
+    display: inline;
+    float: left;
+}
+
+.instrumentControls {
+    display: flex;
+    align-items: center;
+    /* margin-bottom: 10px; */
+}
+
+.instrumentVolumeBox {
+    display: flex;
+    align-items: center;
+    width: 240px;
+    height: 40px;
+    border: 1px solid #01558a;
+    padding-left: 10px;
+}
+
+.instrumentVolumeBox>h4 {
+    display: inline;
+    color: #1679b6;
+    margin-right: 5px;
+}
+
+.instrumentOctave {
+    display: flex;
+    align-items: center;
+    width: 160px;
+    height: 40px;
+    border: 1px solid #01558a;
+    padding-left: 5px;
+    margin-right: 40px;
+}
+
+.instrumentOctave>h4 {
+    display: inline;
+    color: #1679b6;
+    margin-right: 5px;
+}
+
+.instrumentOctave>.btn {
+    padding: .5em .8em;
+    width: 90px;
+    background: #6bc7fc;
+    font-size: .9em;
+}
+
+.instrumentOctave>.btn:hover {
+    background: #1679b6;
+}
+
+.instruments {
+    display: block;
+    height: 40px;
+    width: fit-content;
+    margin: 0;
+    /* margin-right: 80px; */
+}
+
+#beatCount {
+    float: center;
+    width: 68px !important;
+    font-size: 1.4em;
+    background: #d0d2d3;
+    color: #fff;
+    /* border-radius: 5px; */
+    font-weight: normal;
+    font-size: .8em;
+    line-height: 100%;
+    text-align: center;
+    padding: 1em;
+}
+
+.clickBeat {
+    display: inline-block;
+    width: 40px;
+    height: 38px;
+    background: #a2d8f7;
+    /* border-radius: 5px; */
+    line-height: 100%;
+    margin: 0;
+    border: 1px solid #7fa7be;
+}
+
+.clickBeat.on {
+    background: #3aaef7 !important;
+}
+
+.clickBeat.onPlaying {
+    background: #01558a !important;
+}
+
+.clickBeat.offPlaying {
+    background: #c1defc !important;
+}
+
+.clickBeat.emphasize {
+    background: #8bcff7;
+}
