@@ -29,7 +29,7 @@
 
 	<?php
 
-	$TO = 'nolanjamesharris@gmail.com';
+	$TO = 'nolanjay@hotmail.com';
 
 	//message the subject of the email
 	$SUBJECT = 'Contact from Portfolio';
